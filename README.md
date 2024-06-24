@@ -55,7 +55,7 @@
 ### 3.1.gradle方式的引入
 ```text
 dependencies {
-    compile 'com.iqismart:easy-captcha:1.6.2'
+    compile 'com.iqismart:easy-captcha:1.7.0'
 }
 ```
 
@@ -65,13 +65,13 @@ dependencies {
    <dependency>
       <groupId>com.iqismart</groupId>
       <artifactId>easy-captcha</artifactId>
-      <version>1.6.2</version>
+      <version>1.7.0</version>
    </dependency>
 </dependencies>
 ```
 
 ### 3.3.jar包下载
-[easy-captcha-1.6.2.jar](https://gitee.com/whvse/EasyCaptcha/releases)
+[easy-captcha-1.7.0.jar](https://gitee.com/whvse/EasyCaptcha/releases)
 
 maven导入jar包，在项目根目录创建`libs`文件夹，然后pom.xml添加如下：
 ```
@@ -79,7 +79,7 @@ maven导入jar包，在项目根目录创建`libs`文件夹，然后pom.xml添�
   <groupId>com.iqismart</groupId>
   <artifactId>easy-captcha</artifactId>
   <version>1.7.0</version>
-  <systemPath>${basedir}/libs/easy-captcha-1.6.2.jar</systemPath>
+  <systemPath>${basedir}/libs/easy-captcha-1.7.0.jar</systemPath>
 </dependency>
 ```
 
@@ -372,7 +372,7 @@ public class CaptchaController {
 
 ## 8.更新日志
 
-- **2019-08-23 (v1.6.2)**
+- **2019-08-23 (v1.7.0)**
     - 增加10种漂亮的内置字体，不依赖系统字体
     
     - 增加算术验证码，运算位数可自由配置
