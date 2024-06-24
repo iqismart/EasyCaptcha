@@ -1,6 +1,6 @@
-package com.wf.captcha;
+package com.iqismart.captcha;
 
-import com.wf.captcha.base.ArithmeticCaptchaAbstract;
+import com.iqismart.captcha.base.ArithmeticCaptchaAbstract;
 
 import javax.imageio.ImageIO;
 import java.awt.*;

@@ -1,11 +1,11 @@
-package com.wf.captcha.utils;
+package com.iqismart.captcha.utils;
 
 import java.awt.*;
 import java.io.IOException;
 
 
-import com.wf.captcha.base.Captcha;
-import com.wf.captcha.SpecCaptcha;
+import com.iqismart.captcha.SpecCaptcha;
+import com.iqismart.captcha.base.Captcha;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 

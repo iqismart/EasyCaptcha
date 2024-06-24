@@ -1,4 +1,4 @@
-package com.wf.captcha.utils;
+package com.iqismart.captcha.utils;
 
 /**
  *

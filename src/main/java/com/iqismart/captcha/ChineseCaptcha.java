@@ -1,35 +1,31 @@
-package com.wf.captcha;
+package com.iqismart.captcha;
 
-import com.wf.captcha.base.Captcha;
+import com.iqismart.captcha.base.ChineseCaptchaAbstract;
 
+import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import javax.imageio.ImageIO;
+public class ChineseCaptcha extends ChineseCaptchaAbstract {
 
-/**
- * png格式验证码
- * Created by 王帆 on 2018-07-27 上午 10:08.
- */
-public class SpecCaptcha extends Captcha {
-
-    public SpecCaptcha() {
+    public ChineseCaptcha() {
+        super();
     }
 
-    public SpecCaptcha(int width, int height) {
+    public ChineseCaptcha(int width, int height) {
         this();
         setWidth(width);
         setHeight(height);
     }
 
-    public SpecCaptcha(int width, int height, int len) {
+    public ChineseCaptcha(int width, int height, int len) {
         this(width, height);
         setLen(len);
     }
 
-    public SpecCaptcha(int width, int height, int len, Font font) {
+    public ChineseCaptcha(int width, int height, int len, Font font) {
         this(width, height, len);
         setFont(font);
     }
@@ -67,15 +63,15 @@ public class SpecCaptcha extends Captcha {
             // 抗锯齿
             g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
             // 画干扰圆
-            drawOval(2, g2d);
+            drawOval(3, g2d);
             // 画干扰线
-            g2d.setStroke(new BasicStroke(2f, BasicStroke.CAP_BUTT, BasicStroke.JOIN_BEVEL));
+            g2d.setStroke(new BasicStroke(1.2f, BasicStroke.CAP_BUTT, BasicStroke.JOIN_BEVEL));
             drawBesselLine(1, g2d);
             // 画字符串
             g2d.setFont(getFont());
             FontMetrics fontMetrics = g2d.getFontMetrics();
             int fW = width / strs.length;  // 每一个字符所占的宽度
-            int fSp = (fW - (int) fontMetrics.getStringBounds("W", g2d).getWidth()) / 2;  // 字符的左右边距
+            int fSp = (fW - (int) fontMetrics.getStringBounds("王", g2d).getWidth()) / 2;  // 字符的左右边距
             for (int i = 0; i < strs.length; i++) {
                 g2d.setColor(color());
                 int fY = height - ((height - (int) fontMetrics.getStringBounds(String.valueOf(strs[i]), g2d).getHeight()) >> 1);  // 文字的纵坐标

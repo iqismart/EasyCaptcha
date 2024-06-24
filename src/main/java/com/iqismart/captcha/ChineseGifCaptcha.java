@@ -1,7 +1,7 @@
-package com.wf.captcha;
+package com.iqismart.captcha;
 
-import com.wf.captcha.base.ChineseCaptchaAbstract;
-import com.wf.captcha.utils.GifEncoder;
+import com.iqismart.captcha.base.ChineseCaptchaAbstract;
+import com.iqismart.captcha.utils.GifEncoder;
 
 import java.awt.*;
 import java.awt.geom.CubicCurve2D;

@@ -6,7 +6,7 @@
     <!-- 图形验证码servlet -->
     <servlet>
         <servlet-name>CaptchaServlet</servlet-name>
-        <servlet-class>com.wf.captcha.servlet.CaptchaServlet</servlet-class>
+        <servlet-class>com.iqismart.captcha.servlet.CaptchaServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>CaptchaServlet</servlet-name>

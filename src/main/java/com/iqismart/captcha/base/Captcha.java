@@ -1,6 +1,6 @@
-package com.wf.captcha.base;
+package com.iqismart.captcha.base;
 
-import com.wf.captcha.utils.FontsUtil;
+import com.iqismart.captcha.utils.FontsUtil;
 
 import java.awt.*;
 import java.awt.geom.CubicCurve2D;

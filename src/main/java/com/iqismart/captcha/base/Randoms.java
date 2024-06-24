@@ -1,4 +1,4 @@
-package com.wf.captcha.base;
+package com.iqismart.captcha.base;
 
 import java.security.SecureRandom;
 

@@ -1,12 +1,10 @@
-package com.wf.captcha;
+package com.iqismart.captcha;
 
-import com.wf.captcha.base.Captcha;
-import com.wf.captcha.utils.GifEncoder;
+import com.iqismart.captcha.base.Captcha;
+import com.iqismart.captcha.utils.GifEncoder;
 
 import java.awt.*;
 import java.awt.geom.CubicCurve2D;
-import java.awt.geom.QuadCurve2D;
-import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.OutputStream;

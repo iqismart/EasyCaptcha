@@ -55,7 +55,7 @@
 ### 3.1.gradle方式的引入
 ```text
 dependencies {
-    compile 'com.iqismart:easy-captcha:1.7.0'
+    compile 'com.iqismart:easy-captcha:1.7.1'
 }
 ```
 
@@ -65,21 +65,21 @@ dependencies {
    <dependency>
       <groupId>com.iqismart</groupId>
       <artifactId>easy-captcha</artifactId>
-      <version>1.7.0</version>
+      <version>1.7.1</version>
    </dependency>
 </dependencies>
 ```
 
 ### 3.3.jar包下载
-[easy-captcha-1.7.0.jar](https://gitee.com/whvse/EasyCaptcha/releases)
+[easy-captcha-1.7.1.jar](https://gitee.com/whvse/EasyCaptcha/releases)
 
 maven导入jar包，在项目根目录创建`libs`文件夹，然后pom.xml添加如下：
 ```
 <dependency>
   <groupId>com.iqismart</groupId>
   <artifactId>easy-captcha</artifactId>
-  <version>1.7.0</version>
-  <systemPath>${basedir}/libs/easy-captcha-1.7.0.jar</systemPath>
+  <version>1.7.1</version>
+  <systemPath>${basedir}/libs/easy-captcha-1.7.1.jar</systemPath>
 </dependency>
 ```
 
@@ -107,17 +107,20 @@ public class CaptchaController {
 
 ### 4.2.在servlet中使用
 web.xml中配置servlet：
+
 ```xml
+
 <web-app>
-    <!-- 图形验证码servlet -->
-    <servlet>
-        <servlet-name>CaptchaServlet</servlet-name>
-        <servlet-class>com.wf.captcha.servlet.CaptchaServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>CaptchaServlet</servlet-name>
-        <url-pattern>/captcha</url-pattern>
-    </servlet-mapping>
+  <!-- 图形验证码servlet -->
+  <servlet>
+    <servlet-name>CaptchaServlet</servlet-name>
+    <servlet-class>com.iqismart.captcha.servlet.CaptchaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CaptchaServlet</servlet-name>
+       
+    <url-pattern>/captcha</url-pattern>
+  </servlet-mapping>
 </web-app>
 
 ```
@@ -372,7 +375,7 @@ public class CaptchaController {
 
 ## 8.更新日志
 
-- **2019-08-23 (v1.7.0)**
+- **2019-08-23 (v1.7.1)**
     - 增加10种漂亮的内置字体，不依赖系统字体
     
     - 增加算术验证码，运算位数可自由配置

@@ -1,4 +1,4 @@
-package com.wf.captcha;
+package com.iqismart.captcha;
 
 import org.junit.Test;
 
