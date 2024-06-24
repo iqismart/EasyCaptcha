@@ -7,7 +7,6 @@ import java.util.Objects;
  * 文件操作工具类，此类源码从org.apache.commons.io.FileUtils中复制
  *
  * @author zrh 455741807@qq.com
- * @date 2022-05-07
  */
 public class FileUtil {
     public static final int DEFAULT_BUFFER_SIZE = 8192;

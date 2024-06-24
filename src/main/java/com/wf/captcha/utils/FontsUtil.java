@@ -26,7 +26,6 @@ import java.nio.file.Paths;
  * 部分操作系统下读不到文件的问题。
  *
  * @author zrh 455741807@qq.com
- * @date 2022-05-07
  *
  */
 public class FontsUtil {

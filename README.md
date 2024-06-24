@@ -1,6 +1,6 @@
 # EasyCaptcha
 
-![MavenCentral](https://img.shields.io/maven-central/v/com.github.whvcse/easy-captcha?style=flat-square)
+![MavenCentral](https://img.shields.io/maven-central/v/com.iqismart/easy-captcha?style=flat-square)
 ![Hex.pm](https://img.shields.io/hexpm/l/plug.svg?style=flat-square)
 
 
@@ -55,7 +55,7 @@
 ### 3.1.gradle方式的引入
 ```text
 dependencies {
-    compile 'com.github.whvcse:easy-captcha:1.6.2'
+    compile 'com.iqismart:easy-captcha:1.6.2'
 }
 ```
 
@@ -63,7 +63,7 @@ dependencies {
 ```xml
 <dependencies>
    <dependency>
-      <groupId>com.github.whvcse</groupId>
+      <groupId>com.iqismart</groupId>
       <artifactId>easy-captcha</artifactId>
       <version>1.6.2</version>
    </dependency>
@@ -76,9 +76,9 @@ dependencies {
 maven导入jar包，在项目根目录创建`libs`文件夹，然后pom.xml添加如下：
 ```
 <dependency>
-  <groupId>com.github.whvcse</groupId>
+  <groupId>com.iqismart</groupId>
   <artifactId>easy-captcha</artifactId>
-  <version>1.6.1</version>
+  <version>1.7.0</version>
   <systemPath>${basedir}/libs/easy-captcha-1.6.2.jar</systemPath>
 </dependency>
 ```
